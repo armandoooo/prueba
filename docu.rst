@@ -5,7 +5,7 @@ Sistema de Gestión de Documentos Estructurados
 
 
 
-1. Introducción
+1. Introducción docu
 ------------------------
 
 El sistema manejará la documentación en formato rts "reStructuredText" en un lenguaje de marcas muy fácil para su implementación y muy versátil para crear documentos. 
