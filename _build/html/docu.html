@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sistema de Gestión de Documentos Estructurados &mdash; documentación de primer - 1.0</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="documentación de primer - 1.0" href="index.html" />
+    <link rel="prev" title="Welcome to primer’s documentation!" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sistema-de-gestion-de-documentos-estructurados">
+<h1>Sistema de Gestión de Documentos Estructurados<a class="headerlink" href="#sistema-de-gestion-de-documentos-estructurados" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduccion">
+<h2>1. Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El sistema manejará la documentación en formato rts &#8220;reStructuredText&#8221; en un lenguaje de marcas muy fácil para su implementación y muy versátil para crear documentos.</p>
+<p>El sistema genera en base a una estructura definida en un archivo “archivo.rst” una estructura de documentos, Desde el usuario utilizando software libre como sphix 1.3.1. se genera archivos html, los mismos que son actualizados mediante un script shell en el servidor.</p>
+<p>Este sistema esta compuesto de subsistemas los cuales son:</p>
+<ul class="simple">
+<li>Subsistema de Creación Documentos Estructurados</li>
+<li>Subsistema de Flujo de Documentos</li>
+<li>Subsistema de Gestor de Documentos</li>
+</ul>
+<p>Este sistema permitirá a los usuarios mantener actualizados de forma permanente la documentación en un repositorio definido.</p>
+</div>
+<div class="section" id="estructura-de-documentos">
+<h2>2. Estructura de documentos<a class="headerlink" href="#estructura-de-documentos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Revisada una serie de proyectos como propuesta genérica se puede definir la estructura de documentos dentro un archivo.rst para la carpeta DOCS, el cual permitira documentar el trabajo durante el desarrollo de los proyectos de Software</p>
+</div>
+<div class="section" id="estructura-basica-propuesta-de-la-carpeta-docs">
+<h2>3. Estructura básica propuesta de la carpeta DOCS<a class="headerlink" href="#estructura-basica-propuesta-de-la-carpeta-docs" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">contenido.rts</span>
+
+<span class="x">documentacion-tecnica/</span>
+
+<span class="x">guia-de-inicio.rts</span>
+
+<span class="x">guia-de-instalacion.rts</span>
+
+<span class="x">manuales/</span>
+
+<span class="x">aplicación/</span>
+
+<span class="x">----------css/</span>
+
+<span class="x">----------font/</span>
+
+<span class="x">----------img/</span>
+
+<span class="x">----------js/</span>
+
+<span class="x">----------jquery/</span>
+
+<span class="x">referencias-tecnicas/</span>
+
+<span class="x">glosario-de-terminos.rts</span>
+
+<span class="x">anexos/</span>
+</pre></div>
+</div>
+<p><strong>DONDE:</strong></p>
+<p><strong>contenido.rts</strong>, Este archivo contiene la estructura definida para el desarrollo de un determinado trabajo, que puede ser ampliado o simplificado de acuerdo a las necesidades.</p>
+<p><strong>documentacion-tecnica/</strong>, Esta carpeta contiene los archivos de diseño de los sistemas.</p>
+<p><strong>guia-de-inicio.rts</strong>, Este archivo presenta una guía rápida de inicio del sistema.</p>
+<p><strong>guia-de-instalacion.rts</strong>, Este archivo presenta una guia de instalación del sistema.</p>
+<p><strong>manuales/</strong>, Esta carpeta contiene archivos de manuales de usuario, administracion y otros.</p>
+<p><strong>aplicación/</strong>, En esta carpeta se almacenan los archivos de la aplicación, en esta estructura básica solo se presento lo necesario, si se utiliza otros modelos de desarrollo se pueden agregar las carpetas necesarias de acuerdo al trabajo a desarrollar.</p>
+<p><strong>referencias-tecnicas/</strong>, Esta carpeta contiene las referencias tecnicas, normativa y / o procedimientos que se emplean para el desarrollo del sistema.</p>
+<p><strong>glosario-de-terminos.rts</strong>, En este archivo se listan los terminos tecnicos utilizados mas importantes en la documentación.</p>
+<p><strong>anexos/</strong>, Esta carpeta contiene archivos complementarios utilizados y bien definidos que pueden ser de origen externo o propio que se utilizan durante el desarrollo de sistemas.</p>
+</div>
+<div class="section" id="desarrollo-de-los-subsistemas-a-desarrollar-con-todo-el-tema-tecnico">
+<h2>4. Desarrollo de los subsistemas ( a desarrollar con todo el tema técnico)<a class="headerlink" href="#desarrollo-de-los-subsistemas-a-desarrollar-con-todo-el-tema-tecnico" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="subsistema-de-creacion-documentos-estructurados">
+<h2>4.1 Subsistema de Creación Documentos Estructurados<a class="headerlink" href="#subsistema-de-creacion-documentos-estructurados" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La creación de los documentos estructurados permite uniformar todos documentos, para diferentes propositos, desde simples memoradums, informes</p>
+</div>
+<div class="section" id="subsistema-de-flujo-de-documentos">
+<h2>4.2 Subsistema de Flujo de Documentos<a class="headerlink" href="#subsistema-de-flujo-de-documentos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Este sistema realiza el seguimiento del flujo que sigue el documento de acuerdo a una estructura de una institución definida.</p>
+</div>
+<div class="section" id="subsistema-de-gestor-de-documentos">
+<h2>4.3 Subsistema de Gestor de Documentos<a class="headerlink" href="#subsistema-de-gestor-de-documentos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Este sistema permite la administración de documentación centralizada en un repositorio definido</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sistema de Gestión de Documentos Estructurados</a><ul>
+<li><a class="reference internal" href="#introduccion">1. Introducción</a></li>
+<li><a class="reference internal" href="#estructura-de-documentos">2. Estructura de documentos</a></li>
+<li><a class="reference internal" href="#estructura-basica-propuesta-de-la-carpeta-docs">3. Estructura básica propuesta de la carpeta DOCS</a></li>
+<li><a class="reference internal" href="#desarrollo-de-los-subsistemas-a-desarrollar-con-todo-el-tema-tecnico">4. Desarrollo de los subsistemas ( a desarrollar con todo el tema técnico)</a></li>
+<li><a class="reference internal" href="#subsistema-de-creacion-documentos-estructurados">4.1 Subsistema de Creación Documentos Estructurados</a></li>
+<li><a class="reference internal" href="#subsistema-de-flujo-de-documentos">4.2 Subsistema de Flujo de Documentos</a></li>
+<li><a class="reference internal" href="#subsistema-de-gestor-de-documentos">4.3 Subsistema de Gestor de Documentos</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="capítulo anterior">Welcome to primer&#8217;s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/docu.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, armandoCmis.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="_sources/docu.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
